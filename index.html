@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Website</title>
+    <title>Tech-Tonic</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -18,27 +18,32 @@
     </header>
     
     <section class="hero-banner">
-        <img src="hero.jpg" alt="Hero Banner">
+        <img src="./Assets/techTonic.jpg" alt="Hero Banner 1" class="active">
+        <img src="./Assets/photo-1556761175-129418cb2dfe.jpeg" alt="Hero Banner 2">
+        <img src="./Assets/photo-1581547848545-a75a2634ba23.jpeg" alt="Hero Banner 3">
+        <img src="./Assets/podcast-7876792_640.jpg" alt="Hero Banner 4">
+
     </section>
     
     <section class="intro-title">
-        <h2><u>Welcome t Tech-Tonic </u></h2>
+        <h2><u>Welcome to Tech-Tonic </u></h2>
         <p>Welcome to Tech-Tonic Your ultimate destination for all things tech! Whether you’re a gadget geek or just tech-curious, Tech-Tonic is your go-to channel for in-depth discussions, reviews, and news on the latest tech releases, smartphones, action cameras, Android, iOS, and much more. Dive into the world of technology with us and stay updated with the latest trends and insights.</p>
     </section>
     
     <section class="about-us">
         <h2><u>About Us</u></h2>
-        <p>About Tech-Tonic Tech-Tonic is a podcast channel dedicated to bringing you the latest and greatest in technology. Founded by passionate tech enthusiasts, our mission is to keep you informed and entertained with engaging discussions, expert opinions, and comprehensive reviews of the newest gadgets and tech innovations. Our AI automated hosts, Pixel and Byte, deliver engaging content while our info provider ensures you get accurate and up-to-date information.</p>
-
+        
+            <p> Founded by passionate tech enthusiasts, our mission is to keep you informed and entertained with engaging discussions, expert opinions, and comprehensive reviews of the newest gadgets and tech innovations.<br> Our AI automated hosts, Pixel and Byte, deliver engaging content while our info provider ensures you get accurate and up-to-date information.</p>
+    </section>
     </br>
 
+    <section class="meet-the-team">
     <h2><u> Meet the Team </u></h2>
-    <P>Meet the Team
-        Our AI Hosts
+    <P>Our AI Hosts <br><br>
         
-        Pixel: The voice of the podcast, Pixel is an AI automated host who keeps you engaged with the latest tech news and discussions.
+        Pixel: The voice of the podcast, Pixel is an AI automated host who keeps you engaged with the latest tech news and discussions. <br> <br>
         
-        Byte: Joining Pixel, Byte is an AI automated host who shares insights and opinions on various tech topics.
+        Byte: Joining Pixel, Byte is an AI automated host who shares insights and opinions on various tech topics.<br> <br>
         
         Info Provider: Behind the scenes, our dedicated info provider ensures that the content delivered by Pixel and Byte is accurate, relevant, and up-to-date.</P>
 
@@ -51,20 +56,27 @@
     
     <section class="contact">
         <h2>Contact Us</h2>
-        <form id="contactForm">
-            <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+        <form id="contactForm" class="contact-form" action="https://formspree.io/f/xknqgkvd" method="POST">
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
             <input type="email" id="email" name="email" placeholder="Email" required>
             <textarea id="message" name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send</button>
         </form>
-        <p>Email: <a href="mailto:mahanadhiparisara07@gmail.com">mahanadhi@tech-tonic.com</a></p>
-        <p>Phone: <a href="tel:+91-1234567980">+91-1234567980</a></p>
-    </section>    
+        <section id="contact-info" style="display: flex; justify-content: space-between; margin-top: 10px;">
+            <p>Email: <a href="mailto:mahanadhiparisara07@gmail.com">mahanadhi@tech-tonic.com</a></p>
+            <p>Phone: <a href="tel:+91-1234567980">+91-1234567980</a></p>
+        </section>
+    </section>       
     
     <footer>
         <p>&copy; 2025 Tech-Tonic. All rights reserved.</p>
     </footer>
 
     <script src="./script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.classList.add('fade-in');
+        });
+    </script>
 </body>
 </html>
