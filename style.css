@@ -1,0 +1,134 @@
+:root {
+    --blue: #4285f4;
+    --red: #DB4437;
+    --yellow: #F4B400;
+    --green: #0F9D58;
+    --gray: #f1f3f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background: var(--gray);
+    text-align: center;
+    line-height: 1.6;
+    overflow-x: hidden;
+    justify-content: center;
+    opacity: 0; /* Initial opacity for fade-in effect */
+    transition: opacity 1s ease-in-out; /* Smooth transition */
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    background-color: var(--blue);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.hero-banner {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-banner img {
+    width: auto;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-banner img.active {
+    opacity: 1;
+}
+
+.intro-title, .about-us, .services, .sponsors, .contact-form, .meet-the-team {
+    padding: 20px;
+    background-color: var(--gray);
+}
+
+.sponsors {
+    background-color: white;
+}
+
+.sponsors img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.contact-form input, .contact-form textarea, .contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: block;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    background: linear-gradient(135deg, #0d1017, #0B141F, #012B3E);
+}
+
+footer {
+    background-color: var(--yellow);
+    padding: 20px;
+    text-align: center;
+}
+
+.fade-in {
+    opacity: 1; /* Final opacity for fade-in effect */
+}
+
+button {
+    background-color: #34A853;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2C8C47;
+}
+
+header a {
+    background-color: var(--blue);
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background: lightskyblue;
+}
