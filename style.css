@@ -231,6 +231,7 @@
 
 .sponsors {
     background-color: white;
+    text-align: center;
 }
 
 .sponsors img {
@@ -241,7 +242,7 @@
 }
   
   .sponsor-grid {
-    display: grid;
+    display: inline-block;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
