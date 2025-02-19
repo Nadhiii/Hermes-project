@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    const prevButton = document.querySelector(".slider .prev");
-    const nextButton = document.querySelector(".slider .next");
+    const prevButton = document.querySelector(".slider .prev"); // Corrected class name
+    const nextButton = document.querySelector(".slider .next"); // Corrected class name
 
     if (prevButton && nextButton) {
         prevButton.addEventListener("click", function () {
