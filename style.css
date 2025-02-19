@@ -283,7 +283,7 @@
   .footer-column form input,
   .footer-column form textarea {
     width: 100%;
-    padding: 8px;
+    padding: 8px; 
     margin: 5px 0;
     border: none;
     border-radius: 3px;
@@ -435,9 +435,8 @@
   .contact-info a span {
     margin-left: 10px;
   }
-  .contact-form {
-    width: 100%;
-    max-width: 400px;
+  .contact-form, .google-map {
+    width: 50%;
   }
   .contact-form input,
   .contact-form textarea {
