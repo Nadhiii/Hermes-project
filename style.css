@@ -547,7 +547,7 @@
 }
 
 #contact-info a {
-    color: var(--blue);
+    color: #fff;
     text-decoration: none;
 }
 
@@ -560,4 +560,8 @@
         flex-direction: row;
         justify-content: space-between;
     }
+}
+
+a {
+    color: #fff;
 }
