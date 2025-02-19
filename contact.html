@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero-banner">
+        <img src="./Assets/techTonic.jpg" alt="Hero Banner 1" class="active">
+        <img src="./Assets/photo-1556761175-129418cb2dfe.jpeg" alt="Hero Banner 2">
+        <img src="./Assets/photo-1581547848545-a75a2634ba23.jpeg" alt="Hero Banner 3">
+        <img src="./Assets/podcast-7876792_640.jpg" alt="Hero Banner 4">
+
+    </section>
+    
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm" class="contact-form" action="https://formspree.io/f/xknqgkvd" method="POST">
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <section id="contact-info" style="display: flex; justify-content: space-between; margin-top: 10px;">
+            <p>Email: <a href="mailto:mahanadhiparisara07@gmail.com">mahanadhi@tech-tonic.com</a></p>
+            <p>Phone: <a href="tel:+91-1234567980">+91-1234567980</a></p>
+        </section>
+    </section>    
+
+    <section id="map" style="height: 400px; width: 100%;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123889.82092976214!2d120.9334341178393!3d13.984959787644433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd730a1e9e6721%3A0xeaf42e2516f22dcd!2sTaal%20Lake!5e0!3m2!1sen!2sin!4v1739872787570!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Tech-Tonic. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.classList.add('fade-in');
+        });
+    </script>
+</body>
+</html>
